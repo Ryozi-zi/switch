@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+}
+
+#background {
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: stretch;
+  background-color: #282828;
+  transition: all ease .5s;
+  flex-wrap: wrap;
+}
+
+ul {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  width: 100vw;
+}
+
+li {
+  list-style: none;
+  font-family: '游ゴシック';
+  font-weight: bold;
+  color: #bcbaba;
+  font-size: 100px;
+}
+
+a {
+  height: 80px;
+  width: 160px;
+  background-color: #e5e5e5;
+  border-radius: 40px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 6px solid #aaaaaa;
+  position: relative;
+  overflow: hidden;
+  transition: all ease .2s;
+  z-index:
+}
+
+a:before {
+  content: '';
+  height: 68px;
+  width: 148px;
+  background-color: #5af45a;
+  border-radius: 34px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-82px);
+  transition: all ease .18s;
+  z-index: 100;
+}
+
+a:after {
+  content: '';
+  height: 68px;
+  width: 68px;
+  background-color: #e5e5e5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 34px;
+  transition: transform ease .2s;
+  box-shadow: -2px 0 10px #898989;
+  z-index: 100;
+}
+
+@keyframes move {
+  0% {}
+
+  100% {
+    transform: translateX(80px);
+  }
+}
+
+@keyframes light {
+  0% {
+    color: #ff3d0c;
+    text-shadow: 0 0 7px #ff3d0c, 0 0 150px #ff8c35;
+  }
+
+  32% {
+    color: #ff3d0c;
+    text-shadow: 0 0 7px #ff3d0c, 0 0 150px #ff8c35;
+  }
+
+  33% {
+    color: #25ff11;
+    text-shadow: 0 0 7px #25ff11, 0 0 150px #cbff5b;
+  }
+
+  65% {
+    color: #25ff11;
+    text-shadow: 0 0 7px #25ff11, 0 0 150px #cbff5b;
+  }
+
+  66% {
+    color: #1649ff;
+    text-shadow: 0 0 7px #1649ff, 0 0 150px #7fffff;
+  }
+
+  100% {
+    color: #1649ff;
+    text-shadow: 0 0 7px #1649ff, 0 0 150px #7fffff;
+  }
+}
+
+/* a:active:before {
+  background-color: #68ed4e;
+}
+
+a:active:after {
+  transform: translateX(76px);
+}
+*/
